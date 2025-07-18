@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Funktionen</title>
+  
+
+</head>
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
+       
+
+    <style> 
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white;font-size:0.9em; font-family: Verdana, Sans-serif;margin:0.5em; }
+        input {background-color:yellow; }
+    </style>
+    
+	
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Lineare Gleichungssysteme</p>
+  
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+        <pre><p class ="Aufgabe" ><strong>Aufgabe 66
+
+Ein Hotel hat 21 Zimmer, Einzel- und Doppelzimmer. 
+Das Hotel kann 30 Gäste unterbringen. 
+Wie viel Einzel-(E) und Doppelzimmer (D) 
+hat das Hotel?</strong>    D: <input type="text" id="Eintrag66" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef66" onclick="Aufgabe66()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe66() { 
+                                                
+                          if (Eintrag66.value=="9") {alert("Richtig"); document.getElementById("Pruef66").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag66.value!=="9" && Eintrag66.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef66").disabled= true; document.getElementById("Eintrag66").value="9"; window.open('LFunkt_Aufgabe66.html');}
+                               
+                          else if (Eintrag66.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>                            
+
+<pre><p class="Aufgabe"><strong>Aufgabe 67
+
+Ein Flugzeug kommt mit Rückenwind in einer Stunde auf 
+870 km. Mit Gegenwind sind es 780 km. Wie groß sind die 
+Flugzeug- (F) und die Windgeschwindigkeit (W) in km/h?</strong>    
+<button  onclick="window.open('LFunkt_Aufgabe67.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 69
+
+Ein Flugzeug kommt mit Rückenwind in einer Stunde auf 
+870 km. Mit Gegenwind sind es 780 km. Wie groß sind die 
+Flugzeug- (F) und die Windgeschwindigkeit (W) in km/h?</strong> 
+Steigungswinkel α = <input type="text" id="Eintrag69" maxlength="4" size="1" style= background-color:yellow ></input> °<button id="Pruef69" onclick="Aufgabe69()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe69() { 
+                                                
+                          if (Eintrag69.value=="26,6") {alert("Richtig"); document.getElementById("Pruef69").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag69.value!=="26,6" && Eintrag69.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef69").disabled= true; document.getElementById("Eintrag69").value="26,6"; window.open('LFunkt_Aufgabe69.html');}
+                               
+                          else if (Eintrag69.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 70
+
+Liegen die Punkte A(-10|1), B(-2|-1) und C(2|-2) auf einer Geraden? </strong> <button  onclick="window.open('LFunkt_Aufgabe70.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 71
+
+Ergänzen Sie P(10|<input type="text" id="Eintrag71" maxlength="1" size="1" style= background-color:yellow ></input>) für einen Punkt, der auf der Ursprungsgeraden liegt, 
+und die durch den Punkt Q(0,25|0,2) geht? </strong><button id="Pruef71" onclick="Aufgabe71()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe71() { 
+                                                
+                          if (Eintrag71.value=="8") {alert("Richtig"); document.getElementById("Pruef71").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag71.value!=="8" && Eintrag71.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef71").disabled= true; document.getElementById("Eintrag71").value="8"; window.open('LFunkt_Aufgabe71.html');}
+                               
+                          else if (Eintrag71.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>                                
+
+<pre><p class="Aufgabe"><strong>Aufgabe 72
+
+Wie lautet die Funktionsgleichung der Gerade, 
+die durch die Punkte P1(-2|-3) und P2(2|-3) geht?</strong> <button  onclick="window.open('LFunkt_Aufgabe72.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 73
+
+Wie lautet die Funktionsgleichung der Parallelen zu y = -0,25x, 
+die durch den Punkt (-6|0) geht?</strong> y = <input type="text" id="Eintrag73" maxlength="5" size="2" style= background-color:yellow ></input> x - 1,5 <button id="Pruef73" onclick="Aufgabe73()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe73() { 
+                                                
+                          if (Eintrag73.value=="-0,25") {alert("Richtig"); document.getElementById("Pruef73").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag73.value!=="-0,25" && Eintrag73.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef73").disabled= true; document.getElementById("Eintrag73").value="-0,25"; window.open('LFunkt_Aufgabe73.html');}
+                               
+                          else if (Eintrag73.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>  
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 74
+
+Ergänzen Sie Q( |1) für einen Punkt, der auf einer Senkrechten zu y = 7x - 21 liegt, 
+und durch den Punkt P(3|0) gehen soll.</strong> <button  onclick="window.open('LFunkt_Aufgabe74.html');" >Lösung</button></p></pre>
+
+<p class = "Aufgabe" ><span style = "background-color:white;">Wie lautet die Gleichung der Gerade, die</span></p>   
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 75
+
+zur x-Achse parallel liegt und durch den Punkt A(3|-2) geht? </strong>
+y = <input type="text" id="Eintrag75" maxlength="2" size="1" style= background-color:yellow ></input> x - 1,5 <button id="Pruef75" onclick="Aufgabe75()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe75() { 
+                                                
+                          if (Eintrag75.value=="-2") {alert("Richtig"); document.getElementById("Pruef75").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag75.value!=="-2" && Eintrag75.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef75").disabled= true; document.getElementById("Eintrag75").value="-2"; window.open('LFunkt_Aufgabe75.html');}
+                               
+                          else if (Eintrag75.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 76
+
+zur y-Achse parallel liegt und durch den Punkt B(0|4) verläuft? </strong> <button  onclick="window.open('LFunkt_Aufgabe76.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 77
+
+den Steigungswinkel 45° hat und durch den Punkt C(-1|2) geht?  </strong>
+y = x + <input type="text" id="Eintrag77" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef77" onclick="Aufgabe77()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe77() { 
+                                                
+                          if (Eintrag77.value=="3") {alert("Richtig"); document.getElementById("Pruef77").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag77.value!=="3" && Eintrag77.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef77").disabled= true; document.getElementById("Eintrag77").value="3"; window.open('LFunkt_Aufgabe77.html');}
+                               
+                          else if (Eintrag77.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+                          
+<pre><p class = "Aufgabe" ><span style = "background-color:white;">Eine Gerade geht durch die Punkte P(-2|2,5) und Q(1|1). 
+Bestimmen Sie die Koordinaten des Punktes auf der Gerade, der</span></p></pre>                             
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 78
+
+<img src="Aufgabe35a.jpg">
+
+den x-Wert 2 hat.</strong> <button  onclick="window.open('LFunkt_Aufgabe78.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 79
+
+<img src="Aufgabe35a.jpg">    
+
+den y-Wert 2 hat. </strong> P(<input type="text" id="Eintrag79" maxlength="2" size="1" style= background-color:yellow ></input>|2) <button id="Pruef79" onclick="Aufgabe79()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe79() { 
+                                                
+                          if (Eintrag79.value=="-1") {alert("Richtig"); document.getElementById("Pruef79").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag79.value!=="-1" && Eintrag79.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef79").disabled= true; document.getElementById("Eintrag79").value="-1"; window.open('LFunkt_Aufgabe79.html');}
+                               
+                          else if (Eintrag79.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 80
+
+<img src="Aufgabe35a.jpg">
+
+auf der x-Achse liegt. </strong> <button  onclick="window.open('LFunkt_Aufgabe80.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 81
+
+<img src="Aufgabe35a.jpg">    
+
+auf der y-Achse liegt. </strong> P(0|<input type="text" id="Eintrag81" maxlength="3" size="1" style= background-color:yellow ></input>) <button id="Pruef81" onclick="Aufgabe81()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe81() { 
+                                                
+                          if (Eintrag81.value=="1,5") {alert("Richtig"); document.getElementById("Pruef81").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag81.value!=="1,5" && Eintrag81.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef81").disabled= true; document.getElementById("Eintrag81").value="1,5"; window.open('LFunkt_Aufgabe81.html');}
+                               
+                          else if (Eintrag81.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>   
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 82
+
+<img src="Aufgabe82.jpg">
+
+Handelt es sich bei dem Viereck ABCD um ein Parallelogramm, 
+ein Trapez oder um keins von beiden?
+A(0|0);  B(2|-5);  C(7|-3);  D(5|2). </strong> 
+
+
+<p class = "Aufgabe" ><span style = "background-color:white;">Stehen die beiden Geraden senkrecht aufeinander?</span></p> 
+
+<pre><p class="Aufgabe"><strong>Aufgabe 83
+
+y₁ = x und y₂ = -x</strong> <button  onclick="window.open('LFunkt_Aufgabe83.html');" >Lösung</button></p></pre>
+
+<pre><p class="Aufgabe"><strong>Aufgabe 84
+
+y₁ = 2x + 3 und y₂ = 0,5x + 2 </strong> 
+
+
+
+
+<pre><p class = "Aufgabe" ><span style = "background-color:white;">Bestimmen Sie die Gleichung der Geraden, die durch den Punkt P 
+geht und senkrecht auf der angegebenen Geraden steht.</span></p></pre> 
+
+<pre><p class="Aufgabe"><strong>Aufgabe 85
+
+y = x - 1    P(1|?)</strong> <button  onclick="window.open('LFunkt_Aufgabe85.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 86
+
+y = 0,1x + 3    P(5|?) </strong> y = -10x +|<input type="text" id="Eintrag86" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe86() { 
+                                                
+                          if (Eintrag86.value=="53,5") {alert("Richtig"); document.getElementById("Pruef86").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag86.value!=="53,5" && Eintrag86.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef86").disabled= true; document.getElementById("Eintrag86").value="53,5"; window.open('LFunkt_Aufgabe86.html');}
+                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                           </script>
+                           
+                                                     
+<pre><p class="Aufgabe"><strong>Aufgabe 87
+
+3y + x - 2 = 0    P(?|1)</strong> <button  onclick="window.open('LFunkt_Aufgabe87.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 88
+
+Laut einer Untersuchung ist das Gewicht G in kg von Männern abhängig von ihrer Größe h in cm.
+Der Zusammenhang ist: G = 0,88 * h - 78 für Männer größer als 160 cm.
+a) Bestimmen Sie das Gewicht eines Mannes, der 1,78 m groß ist.   
+b) Mit welcher Gewichtszunahme pro cm ist bei Männern größer als 1,6 m zu rechnen?</strong> 
+Mit <input type="text" id="Eintrag88" maxlength="4" size="1" style= background-color:yellow ></input> kg/cm. <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button>  
+<strong>c) Wie groß ist dann ein Mann in cm mit einem Körpergewicht von 90 kg? </strong> </p></pre>  
+
+                      <script>
+                        function Aufgabe88() { 
+                                                
+                          if (Eintrag88.value=="0,88") {alert("Richtig"); document.getElementById("Pruef88").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag88.value!=="0,88" && Eintrag88.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef88").disabled= true; document.getElementById("Eintrag88").value="0,88"; window.open('LFunkt_Aufgabe88.html');}
+                               
+                          else if (Eintrag88.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+
+<pre><p class="Aufgabe"><strong>Aufgabe 89
+
+Im Blut eines Menschen sind rote Blutkörperchen. Sie bestehen zu 90% aus Hämoglobin.
+Der Hämoglobingehalt H im Blut einer Frau ist auf 90g/Liter gesunken.
+Durch eine Behandlung steigt der Hämoglobingehalt bei der Frau täglich um 0,24 g/Liter.
+a) Wie lautet die Funktionsgleichung für H in Abhängigkeit von der Zeit t?      
+b) Nach wie viel Tagen liegt der Hämoglobingehalt bei 120 g/Liter?  </strong> 
+<button  onclick="window.open('LFunkt_Aufgabe89.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 90
+
+Eine Krankenschwester legt einem Patienten um 9.10 eine 0,5 l Infusionsflasche an. 
+Um 9.25 sind noch 0,35 l in der Flasche.
+a) Wie viel Liter sind nach 30 Minuten ins Blut gelangt?    
+b) Nach wie vielen Minuten ist die Flasche leer? </strong>  Nach <input type="text" id="Eintrag90" maxlength="2" size="1" style= background-color:yellow ></input> Minuten. <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button>                 
+<strong>c) Nach wie vielen Minuten sind noch 75% in der Flasche? </strong> </p></pre>  
+
+                      <script>
+                        function Aufgabe90() { 
+                                                
+                          if (Eintrag90.value=="50") {alert("Richtig"); document.getElementById("Pruef90").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag90.value!=="50" && Eintrag90.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef90").disabled= true; document.getElementById("Eintrag90").value="50"; window.open('LFunkt_Aufgabe90.html');}
+                               
+                          else if (Eintrag90.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                          
+
+                          
+                          </script> 
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 91
+
+Ein Schüler hat 200 € bei der Sparkasse angelegt.  
+a) Wie lautet die Funktionsgleichung für die Zinsen Z abhängig vom Zinssatz p?  
+a) Bei welchem Zinssatz ist sein Kapital nach einem Jahr auf 300 € angewachsen?  
+b) Bei welchem Zinssatz hat es sich verdoppelt?   </strong> 
+<button  onclick="window.open('LFunkt_Aufgabe91.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 92
+
+Ein Unternehmer hat 5000 € zu 4% angelegt.
+a) Wie lautet die Funktionsgleichung für die Zinsen Z 
+abhängig von der Anzahl der Tage T?  
+b) Wie lautet die Funktionsgleichung für das angewachsene Kapital K 
+abhängig von der Anzahl der Tage T?  
+c) Nach wie viel Tagen beträgt der Zins 10 €? </strong> Nach <input type="text" id="Eintrag92" maxlength="2" size="1" style= background-color:yellow ></input> Tagen. <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe92() { 
+                                                
+                          if (Eintrag92.value=="18") {alert("Richtig"); document.getElementById("Pruef92").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag92.value!=="18" && Eintrag92.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef92").disabled= true; document.getElementById("Eintrag92").value="18"; window.open('LFunkt_Aufgabe92.html');}
+                               
+                          else if (Eintrag92.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                         
+                          </script>  
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 93
+
+Ein Betrieb stellt Bauteile für die Metallindustrie her. 
+Er hat dabei fixe Kosten von 12 000 €.
+Die Herstellung eines Bauteils kostet den Betrieb 45 €. 
+Er kann es für 105 € pro Stück verkaufen.
+a) Wie hoch sind die Kosten für 250 Bauteile?         
+b) Der Betrieb hat Kosten von 21 990 €. 
+Wie viel Bauteile hat er gefertigt? 
+c) Der Betrieb verkauft 275 Bauteile. 
+Wie hoch ist sein Gewinn?    </strong> 
+<button  onclick="window.open('LFunkt_Aufgabe93.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 94
+
+Die Profiltiefe bei Autoreifen nimmt gleichmäßig ab. 
+Nach 20 000 km war sie 4 mm, nach 32 000 km noch 3 mm. 
+a) Wie viel km kann man mit dem Reifen noch fahren, wenn eine 
+Profiltiefe von mindestens 1 mm vorgeschrieben ist? </strong> Noch <input type="text" id="Eintrag94" maxlength="5" size="2" style= background-color:yellow ></input> km. <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button>  
+<strong>b) Um wie viel mm nimmt die Profiltiefe pro 10 000 km ab?    
+c) Welche Profiltiefe hatte der Neureifen in mm?</strong>   </p></pre>  
+
+                      <script>
+                        function Aufgabe94() { 
+                                                
+                          if (Eintrag94.value=="24000") {alert("Richtig"); document.getElementById("Pruef94").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag94.value!=="24000" && Eintrag94.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef94").disabled= true; document.getElementById("Eintrag94").value="24000"; window.open('LFunkt_Aufgabe94.html');}
+                               
+                          else if (Eintrag94.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                          
+
+                          
+                          </script>   
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 95
+
+Temperaturen kann man in Grad Celsius °C oder in Grad Fahrenheit °F messen.
+0 °C entsprechen dabei 32 °F und 100 °C entsprechen 212 °F.
+a) Eine Temperatur steigt um 1 °C. Um wie viel °F ist sie dann gestiegen?  
+b) Wie lautet die Abhängigkeit der Temperatur in °F von der in °C?            
+c) Sie haben 41°C Fieber. Wie viel Grad sind das in °F?</strong> <button  onclick="window.open('LFunkt_Aufgabe95.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 96
+
+Ein Taxifahrer verlangt für eine Fahrt von 7 km 8,10 €. 
+Für eine Fahrt von 9 km verlangt er 9,70 €.
+a) Wie lautet die Funktionsgleichung für die Abhängigkeit 
+der Kosten K von der Strecke s? 
+b) Wie hoch ist die Grundgebühr? </strong>
+Sie beträgt <input type="text" id="Eintrag96" maxlength="4" size="1" style= background-color:yellow ></input> € <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button>   
+<strong>c) Wie weit ist ein Kunde gefahren, wenn er 12,40 € bezahlen muss?   </strong> </p></pre>  
+
+                      <script>
+                        function Aufgabe96() { 
+                                                
+                          if (Eintrag96.value=="2,50") {alert("Richtig"); document.getElementById("Pruef96").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag96.value!=="2,50" && Eintrag96.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef96").disabled= true; document.getElementById("Eintrag96").value="2,50"; window.open('LFunkt_Aufgabe96.html');}
+                               
+                          else if (Eintrag96.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                          
+
+                          
+                          </script>  
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 97
+
+In einem Schwimmbecken steigt beim Befüllen der Wasserspiegel um 0,4 m pro Stunde.
+Im vollen Becken steht das Wasser 2,5 m hoch.
+a) Wie lange dauert es in h, bis das Becken gefüllt ist?   
+b) Das Becken ist 4 Stunden befüllt worden. 
+Wie hoch steht das Wasser in m? </strong> <button  onclick="window.open('LFunkt_Aufgabe97.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 98
+
+Eine Firma pumpt einen Ölbehälter leer. 
+Nach 9 Minuten enthält er noch 12,8 m³ Öl, nach 15 Minuten noch 8 m³.
+a) Nach wie vielen Minuten ist der Behälter leer?</strong> 
+Nach <input type="text" id="Eintrag98" maxlength="2" size="1" style= background-color:yellow ></input> Minuten. <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button> 
+<strong>b) Wie viel m³ Öl waren zu Beginn in dem Behälter?</strong> </p></pre>  
+
+                      <script>
+                        function Aufgabe98() { 
+                                                
+                          if (Eintrag98.value=="25") {alert("Richtig"); document.getElementById("Pruef98").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag98.value!=="25" && Eintrag98.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef98").disabled= true; document.getElementById("Eintrag98").value="25"; window.open('LFunkt_Aufgabe98.html');}
+                               
+                          else if (Eintrag98.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                          
+
+                          
+                          </script>  
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 99
+
+Ein Fallschirmspringer befindet sich in einer Höhe von 400 m 
+und sinkt 320 m pro Minute.
+a) In welcher Höhe befindet er sich nach 30 s?   
+b) Nach welcher Zeit in min ist er am Boden? </strong> <button  onclick="window.open('LFunkt_Aufgabe99.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 100
+
+Ein Kunde hat bei der Sparkasse ein Guthaben von 18 000 €. 
+Er hebt monatlich 1000 € ab.
+a) Nach wie vielen Monaten ist das Kapital aufgebraucht?  
+b) Wie hoch ist sein Kapital nach 10 Monaten? </strong> 
+Es beträgt <input type="text" id="Eintrag100" maxlength="4" size="1" style= background-color:yellow ></input> € <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe100() { 
+                                                
+                          if (Eintrag100.value=="8000") {alert("Richtig"); document.getElementById("Pruef100").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag100.value!=="8000" && Eintrag100.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef100").disabled= true; document.getElementById("Eintrag100").value="8000"; window.open('LFunkt_Aufgabe100.html');}
+                               
+                          else if (Eintrag100.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                          
+
+                          
+                          </script> 
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 101
+
+5000 € zu einem Zinssatz von 12% an.
+a) Wie hoch sind die Jahreszinsen?   
+b) Wie hoch ist der Zinssatz, 
+wenn Sie 325 € Jahreszins bekommen? </strong> <button  onclick="window.open('LFunkt_Aufgabe101.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 102
+
+Ein ICE fährt um 8.00 Uhr mit einer Durchschnittsgeschwindigkeit von 120 km/h 
+von Ort A zu dem 400 km entfernten Ort C.
+Ein IC fährt ebenfalls um 8.00 mit einer Durchschnittsgeschwindigkeit 
+von 100 km/h von Ort B aus zu Ort C.
+A und B sind 40 km voneinander entfernt. 
+Der IC und der ICE fahren in dieselbe Richtung.
+a) Nach wie viel Minuten fährt der ICE durch den Ort B?  
+b) Wie viel Minuten ist der IC später in C?        
+c) Nach wie viel Stunden und nach wie vielen Kilometern überholt der ICE den IC?  
+d) Wie groß müsste die Geschwindigkeit des ICE sein, 
+um gleichzeitig mit dem IC in C einzutreffen? </strong> <input type="text" id="Eintrag102" maxlength="5" size="2" style= background-color:yellow ></input> km/h <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button>    
+<strong>e) Wie weit müsste der Ort B von A entfernt sein, 
+damit ICE und IC gleichzeitig in C eintreffen? </strong> 
+</p></pre>  
+
+                      <script>
+                        function Aufgabe102() { 
+                                                
+                          if (Eintrag102.value=="111,1") {alert("Richtig"); document.getElementById("Pruef102").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag102.value!=="111,1" && Eintrag102.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef102").disabled= true; document.getElementById("Eintrag102").value="111,1"; window.open('LFunkt_Aufgabe102.html');}
+                               
+                          else if (Eintrag102.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                          
+
+                          
+                          </script>   
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 103
+
+Die Marathonstrecke ist 42,195 km lang. 
+Läufer 1 schafft sie in 2 h 58 min 50 s.
+Läufer 2 in 2 h 10 min 11 s.
+a) Berechnen Sie die Geschwindigkeiten der beiden Läufer in km/h.   
+b) Wie viel km muss Läufer 2 noch laufen, wenn Läufer 1 im Ziel ist?    
+c) Nach wie viel Stunden liegen die beiden Läufer 8 km auseinander? </strong> 
+<button  onclick="window.open('LFunkt_Aufgabe103.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 104
+
+In einer Badewanne befinden sich 150 l Wasser. 
+Es laufen 12 l Wasser pro Minute ab.
+a) Wie viel Liter Wasser befinden sich nach 12 Minuten in der Wanne?  
+b) Nach wie viel Minuten ist die Wanne leer?  
+c) Nach wie viel Minuten sind noch 90 l in der Wanne? </strong> 
+Nach <input type="text" id="Eintrag104" maxlength="1" size="1" style= background-color:yellow ></input> Minuten. <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe104() { 
+                                                
+                          if (Eintrag104.value=="5") {alert("Richtig"); document.getElementById("Pruef104").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag104.value!=="5" && Eintrag104.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef104").disabled= true; document.getElementById("Eintrag104").value="5"; window.open('LFunkt_Aufgabe104.html');}
+                               
+                          else if (Eintrag104.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                          
+
+                          
+                          </script>  
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 105
+
+Birken wachsen 1,6 m pro Jahr.
+a) 2008 ist eine 4 m hohe Birke gepflanzt worden. 
+In welchem Jahr ist sie 14 m hoch?  
+b) Wie hoch ist sie nach 20 Jahren? </strong> <button  onclick="window.open('LFunkt_Aufgabe105.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 106
+
+Eine Tropfsteinhöhle ist 4 m hoch. Von oben wachsen Stalaktiten mit 
+einer Zunahme von 0,36 mm/Jahr nach unten.
+Von unten wachsen Stalagmiten mit 0,15 mm/Jahr nach oben.
+a) Ein Stalaktit ist im Jahr 2010 300 mm lang. 
+Wie viel mm ist seine Spitze nach 100 Jahren vom Boden entfernt?             
+b) Ein Stalagmit ist im Jahr 2010 150 mm hoch. 
+Vor wie viel Jahren begann sein Wachstum? </strong> 
+Vor <input type="text" id="Eintrag106" maxlength="4" size="1" style= background-color:yellow ></input> Jahren. <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button>
+<strong>c) Wie viele Jahre würde es dauern, bis der Stalaktit 400 mm lang ist? </strong> </p></pre>  
+
+                      <script>
+                        function Aufgabe106() { 
+                                                
+                          if (Eintrag106.value=="1000") {alert("Richtig"); document.getElementById("Pruef106").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag106.value!=="1000" && Eintrag106.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef106").disabled= true; document.getElementById("Eintrag106").value="1000"; window.open('LFunkt_Aufgabe106.html');}
+                               
+                          else if (Eintrag106.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        </script> 

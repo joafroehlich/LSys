@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Funktionen</title>
+  
+
+</head>
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
+       
+
+    <style> 
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white;font-size:0.9em; font-family: Verdana, Sans-serif;margin:0.5em; }
+        input {background-color:yellow; }
+    </style>
+    
+	
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Lineare Gleichungssysteme</p>
+
+        <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 60
+
+y = x + 3           
+y = -x - 1 </strong>    S(-2|<input type="text" id="Eintrag60" maxlength="1" size="1" style= background-color:yellow ></input>) <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre>
+
+                      <script>
+                        function Aufgabe60() { 
+                                                
+                          if (Eintrag60.value=="1") {alert("Richtig"); document.getElementById("Pruef60").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag60.value!=="1" && Eintrag60.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef60").disabled= true; document.getElementById("Eintrag60").value="1"; window.open('LFunkt_Aufgabe60.html');}
+                               
+                          else if (Eintrag60.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 61
+
+y = 0,5x - 3  
+
+       1       4  
+y = - --- x - ---    </strong> <button  onclick="window.open('LFunkt_Aufgabe61.html');" >Lösung</button>
+       3       3</p></pre> 
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 62
+
+5x + 3y = 21    
+7x + 8y = 37 </strong>    S(3|<input type="text" id="Eintrag62" maxlength="1" size="1" style= background-color:yellow ></input>) <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe62() { 
+                                                
+                          if (Eintrag62.value=="2") {alert("Richtig"); document.getElementById("Pruef62").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag62.value!=="2" && Eintrag62.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef62").disabled= true; document.getElementById("Eintrag62").value="2"; window.open('LFunkt_Aufgabe62.html');}
+                               
+                          else if (Eintrag62.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 63
+
+2x - 2y = 6       
+      y = 2x</strong>    <button  onclick="window.open('LFunkt_Aufgabe63.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 64
+
+3x + 4y = 8        
+ 3  
+--- x + y = 2
+ 4  
+
+c) 2,6y - 1,3x = 1,3
+    0,8y - 0,4x = 2,4</strong> 
+
+<button id ="Keine" onclick="Schalter('Keine')" >Hat keinen Schnittpunkt</button> <button id ="Unendlich" onclick="Schalter('Unendlich')" >Hat unendlich viele Schnittpunkte</button></p></pre>
+
+<script>
+
+function Schalter(buttonId) { 
+                                                
+                          if (buttonId=== "Keine") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Keine").disabled= true;document.getElementById("Unendlich").disabled= true;window.open('LSys_Aufgabe30.html');
+                          }  
+                           
+                          else if (buttonId ==="Unendlich") {alert("Richtig.");            
+                          document.getElementById("Keine").disabled= true;document.getElementById("Unendlich").disabled= true;}
+                        }
+
+                        </script>
+<pre><p class="Aufgabe"><strong>Aufgabe 65
+
+2,6y - 1,3x = 1,3
+0,8y - 0,4x = 2,4</strong>    <button  onclick="window.open('LFunkt_Aufgabe65.html');" >Lösung</button></p></pre>
+
+<button type="button" onclick="window.open('LSys4.html'); window.close('LSys3.html');">mehr...</button>    
+<button type="button" onclick="window.open('index.html'); window.close('LSys3.html');">zurück...</button>    
+	                  
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>      
