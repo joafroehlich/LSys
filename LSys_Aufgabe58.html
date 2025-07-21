@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Gleichungssysteme</title>
+  
+</head>
+<body style="background-color:lightgrey;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 58
+
+  v + w + x - y - z = 6       
+  v + w + x - y + z = 4 
+  v - w + x + y + z = 8      
+  v - w - x + y + z = 2 
+ -v + w - x + y - z = 10     
+ 
+Koeffizientenmatrix: 
+
+ v      w     x      y       z
+ 1      1     1     -1      -1      6     (1) erste Zeile der Lösungsmatrix 
+ 1      1     1     -1       1      4     (2)   
+ 1     -1     1      1       1      8     (3)     
+ 1     -1    -1      1       1      2     (4)    
+-1      1    -1      1      -1     10     (5)    
+ 
+Mit (1) v aus (2), (3), (4) und (5) eliminieren 
+ 
+(1) * (-1) + (2) 
+
+-1    -1     -1     1       1      -6 
+<u> 1     1      1    -1       1       4</u>     
+ 0     0      0     0       2      -2      
+ 
+(1) * (-1) + (3)    
+ 
+-1    -1     -1     1       1      -6 
+<u> 1    -1      1     1       1       8</u>     
+ 0    -2      0     2       2       2      
+ 
+(1) * (-1) + (4) 
+
+-1    -1     -1     1       1      -6 
+<u> 1    -1     -1     1       1       2</u>     
+ 0    -2     -2     2       2      -4 
+ 
+(1) + (5) 
+ 
+ 1     1     1     -1     -1     6 
+<u>-1     1    -1      1     -1    10</u>     
+ 0     2     0      0     -2    16      
+
+Matrix 1 
+ 
+1     1      1     -1      -1       6 
+0     0      0      0       2      -2     fünfte Zeile der Lösungsmatrix 
+0    -2      0      2       2       2     (6)   zweite Zeile der Lösungsmatrix 
+0    -2     -2      2       2      -4     (7) 
+0     2      0      0      -2      16     (8) 
+ 
+Mit (6) w aus (7) und (8) w eliminieren 
+ 
+(6) + (7) 
+ 
+0      2       0      -2      -2     -2 
+<u>0     -2      -2       2       2     -4</u>         
+0      0      -2       0       0     -6    dritte Zeile der Lösungsmatrix 
+ 
+(6) * (-1) + (8)  
+ 
+0     -2      0      2      2      2 
+<u>0      2      0      0     -2     16</u>         
+0      0      0      2      0     18     vierte Zeile der Lösungsmatrix 
+ 
+Lösungsmatrix 
+ 
+1     1      1      -1      -1        6 
+0    -2      0       2       2        2      
+0     0     -2       0       0       -6 
+0     0      0       2       0       18 
+0     0      0       0       2       -2   
+ 
+5. Zeile 
+ 
+  2z = -2 |:2 
+ 
+   <span style="color:red;">z = -1</span> 
+ 
+4. Zeile 
+ 
+    2y = 18 |:2 
+  
+     <span style="color:red;">y = 9</span> 
+ 
+3. Zeile 
+
+ -2x = -6  :(-2) 
+ 
+   <span style="color:red;">x = 3</span> 
+ 
+y und z in die 2. Zeile eingesetzt 
+
+-2w + 2 * 9 + 2 * (-1) = 2 
+ 
+          -2w + 18 - 2 = 2   
+ 
+              -2w + 16 = 2 |-16 
+ 
+                   -2w = -14 |:(-2) 
+ 
+                     <span style="color:red;">w = 7</span>   
+ 
+w, x, y und z in die 1. Zeile eingesetzt 
+ 
+v + 7 + 3 - 9 - 1 * (-1) = 6 
+ 
+                   v + 2 = 6 |-2 
+ 
+                       <span style="color:red;">v = 4</span>        
+                                 
+
+ 
+</p></pre>

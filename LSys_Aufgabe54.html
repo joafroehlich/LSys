@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Gleichungssysteme</title>
+  
+</head>
+<body style="background-color:lightgrey;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 54
+
+4,5x - 3,9y + 2,7z = 3,3 
+0,8x + 1,2y - 3,6z = 2,4 
+1,3x - 1,6y + 1,8z = 5,6 
+ 
+D = <math ><mo>|</mo><mtable><mtr><mtd><mn>4,5</mn></mtd><mtd><mn>-3,9</mn></mtd><mtd><mn>2,7</mn></mtd></mtr><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>1,2</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>-1,6</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> = 4,5 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1,2</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>-1,6</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> -(-3,9) * <math><mo>|</mo>><mtable><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> + 2,7 * <math><mo>|</mo>><mtable><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>1,2</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>-1,6</mn></mtd></mtr></mtable><mo>|</mo></math> =  
+   
+  = 4,5 * (1,2 * 1,8 - (-1,6) * (-3,6)) + 3,9 * (0,8 * 1,8 - 1.3 * (-3,6)) +  
+     
+     + 2,7 * (0,8 * 1,8) - 1,3 * (-3,6)) =    
+ 
+  = 4,5 * (2,16 - 5,76) + 3,9 * (1,44 + 4,68) + 2,7 * (-1,28 - 1,56) = 
+ 
+  = 16,2 + 23,868 - 7,668 = 0 
+  
+D<sub>x</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>3,3</mn></mtd><mtd><mn>-3,9</mn></mtd><mtd><mn>2,7</mn></mtd></mtr><mtr><mtd><mn>2,4</mn></mtd><mtd><mn>1,2</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>5,6</mn></mtd><mtd><mn>-1,6</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> = 3,3 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1,2</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>-1,6</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> -(-3,9) * <math><mo>|</mo>><mtable><mtr><mtd><mn>2,4</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>5,6</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> + 2,7 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2,4</mn></mtd><mtd><mn>1,2</mn></mtd></mtr><mtr><mtd><mn>5,6</mn></mtd><mtd><mn>-1,6</mn></mtd></mtr></mtable><mo>|</mo></math> = 
+     
+  = 3,3 * (1,2 * 1,8 - (-1,6) * (-3,6)) + 3,9 * (2,4 * 1,8 - 5,6 * (-3,6)) +  
+ 
+       + 2,7 * (2,4 * (-1,6) - 5,6 * 1,2 ) =     
+ 
+  = 3,3 * (2,16 - 5,76)  + 3,9 * (4,32 + 20,16) + 2,7 * (- 3,84 - 6,72) =  
+ 
+   = - 11,88 + 95,472 - 28,512 = 55,08 
+ 
+D<sub>y</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>4,5</mn></mtd><mtd><mn>3,3</mn></mtd><mtd><mn>2,7</mn></mtd></mtr><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>2,4</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>5,6</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> = 4,5 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2,4</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>5,6</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> -3,3 * <math><mo>|</mo>><mtable><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>-3,6</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>1,8</mn></mtd></mtr></mtable><mo>|</mo></math> + 2,7 * <math><mo>|</mo>><mtable><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>2,4</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>5,6</mn></mtd></mtr></mtable><mo>|</mo></math> =  
+ 
+   = 4,5 * (2,4 * 1,8 - 5,6 * (-3,6)) - 3,3 * (0,8 * 1,8 - 1,3 * (-3,6)) +  
+ 
+       + 2,7 * (0,8 * 5,6 - 1,3 * 2,4)  
+     
+   = 4,5 * (4,32 + 20,16) - 3,3 * (1,44 - 4,68) + 2,7 * (4,48 - 3,12) =   
+ 
+   = 110,16 + 10,692 + 3,672 = 124,524  
+ 
+D<sub>z</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>4,5</mn></mtd><mtd><mn>-3,9</mn></mtd><mtd><mn>3,3</mn></mtd></mtr><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>1,2</mn></mtd><mtd><mn>2,4</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>-1,6</mn></mtd><mtd><mn>5,6</mn></mtd></mtr></mtable><mo>|</mo></math> = 4,5 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1,2</mn></mtd><mtd><mn>2,4</mn></mtd></mtr><mtr><mtd><mn>-1,6</mn></mtd><mtd><mn>5,6</mn></mtd></mtr></mtable><mo>|</mo></math> -(-3,9) * <math><mo>|</mo>><mtable><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>2,4</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>5,6</mn></mtd></mtr></mtable><mo>|</mo></math> + 3,3 * <math><mo>|</mo>><mtable><mtr><mtd><mn>0,8</mn></mtd><mtd><mn>1,2</mn></mtd></mtr><mtr><mtd><mn>1,3</mn></mtd><mtd><mn>-1,6</mn></mtd></mtr></mtable><mo>|</mo></math> = 
+
+
+  = 4,5 * (1,2 * 5,6 - (-1,6) * 2,4) + 3,9 * (0,8 * 5,6 - 1,3 * 2,4) + 
+
+    + 3,3 * (0,8 * (-1,6) - 1,2 * 1,3)  
+
+  = 4,5 * (6,72 + 3,84) + 3,9 * (4,48 - 3,12) + 3,3 * (-1,28 - 1,56) 
+
+  = 47,52 + 5,304 - 9,372 = 43,452  
+
+D = 0 ; D<sub>x</sub> = D<sub>y</sub> = D<sub>z</sub> ≠ 0 ---> <span style="color:red;">keine Lösung</span> 
+     
+ 
+ 
+ 
+</p></pre>
