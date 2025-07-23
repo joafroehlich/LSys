@@ -521,16 +521,16 @@ Wie viel Liter Wasser, wie viel Liter Säure braucht man?
 Ein Goldschmied mischt Silber vom Feingehalt 600 und 
 vom Feingehalt 800 zu 100 g Silber mit dem Feingehalt 750.
 Wie viel g braucht er vom Feingehalt 600, 
-wie viel vom Feingehalt 800?</strong> 800er: <input type="text" id="Eintrag100" maxlength="5" size="2" style= background-color:yellow ></input> g <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p></pre>  
+wie viel vom Feingehalt 800?</strong> 800er: <input type="text" id="Eintrag100" maxlength="2" size="2" style= background-color:yellow ></input> g <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p></pre>  
 
                       <script>
                         function Aufgabe100() { 
                                                 
-                          if (Eintrag100.value=="111,1") {alert("Richtig"); document.getElementById("Pruef100").disabled= true; 
+                          if (Eintrag100.value=="75") {alert("Richtig"); document.getElementById("Pruef100").disabled= true; 
                           }  
                            
-                          else if (Eintrag100.value!=="111,1" && Eintrag100.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
-                          document.getElementById("Pruef100").disabled= true; document.getElementById("Eintrag100").value="111,1"; window.open('LSys_Aufgabe100.html');}
+                          else if (Eintrag100.value!=="75" && Eintrag100.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef100").disabled= true; document.getElementById("Eintrag100").value="75"; window.open('LSys_Aufgabe100.html');}
                                
                           else if (Eintrag100.value=="") {alert("Bitte eine Eingabe machen")}}
 
