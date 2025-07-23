@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Gleichungssysteme</title>
+  
+</head>
+<body style="background-color:lightgrey;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 111
+
+Ein Händler hat auf Lager 1627 Artikel A, 1018 Artikel B  
+und 508 Artikel C. Die Artikel bietet er in 3 Verpackungen 
+mit  unterschiedlichen Mengen an. 
+ 
+         A         B          C 
+Va       2         4          2 
+Vb       3         2          0 
+Vc       4         1          1 
+ 
+Wie viele Packungen kann er herstellen, wenn er alle Artikel 
+anbieten will? 
+ 
+Va Verpackung A mit 2 Artikeln A , 4 Artikeln B und 2 Artikeln C 
+Vb Verpackung A mit 3 Artikeln A , 2 Artikeln B und 0 Artikeln C 
+Vc Verpackung A mit 4 Artikeln A , 1 Artikeln B und 1 Artikeln C 
+ 
+2 * Va + 3 * Vb + 4 * Vc = 1627 
+ 
+4 * Va + 2 * Vb + 1 * Vc = 1018 
+ 
+2 * Va +          1 * Vc =  508          
+ 
+Koeffizientenmatrix 
+ 
+2         3       2     1627     (1)   erste Zeile der Lösungsmatrix 
+4         2       1     1018     (2) 
+2         0       1      508     (3) 
+ 
+Mit (1) Va aus (2) und (3) eliminieren 
+ 
+(1) * (-2) + (2) 
+
+-4       -6     -8      -3254 
+<u> 4        2      1       1018</u> 
+ 0       -4     -7      -2236         
+ 
+(1) * (-1) + (2) 
+
+-2         -3       -4     -1627 
+<u> 2          0        1       508</u>    
+ 0         -3       -3     -1119             
+ 
+Matrix 1 
+ 
+2       3      2     1627 
+0      -4     -7    -2236       (4)  zweite Zeile der Lösungsmatrix     
+0      -3     -3    -1119       (5)        
+  
+Aus (4) und (5) Vb eliminieren 
+ 
+(4) * 3 + (5) * (-4) 
+ 
+0     -12     -21    -6708 
+<u>0      12      12     4476</u> 
+0       0      -9    -2232    dritte Zeile der Lösungsmatrix 
+ 
+Lösungsmatrix 
+ 
+2         3       2     1627 
+0        -4      -7    -2236 
+0         0      -9    -2232 
+ 
+3. Zeile 
+
+-9Vc = -2232 |: (-9) 
+ 
+  <span style="color:red;">Vc = 248</span> 
+ 
+Vc = 248 in die 2. Zeile eingesetzt 
+
+-4Vb - 7 * 248 = -2236  
+ 
+   -4Vb - 1736 = -2236  +1736 
+ 
+          -4Vb = -500 | :(-4) 
+ 
+            <span style="color:red;">Vb = 125</span> 
+ 
+Vb = 125 und Vc = 248 in die 1. Zeile eingesetzt 
+  
+2Va + 3 * 125 + 2 * 248 = 1627 
+ 
+        2Va + 375 + 596 = 1627 |-1367 
+ 
+                    2Va = 260 |:2 
+ 
+                     <span style="color:red;">Va = 130</span>
+ 
+
+
+</p></pre>

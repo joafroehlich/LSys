@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Gleichungssysteme</title>
+  
+</head>
+<body style="background-color:lightgrey;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 109
+
+Gesucht sind die Koeffizienten der Funktion 
+f(x) = ax³ + bx² + cx + d, wenn f(1) = 4,5, 
+f(-1) = 0,5, f(-5) = -103,5 und f(3) = 40,5. 
+ 
+f(1) = a + b + c + d = 4,5 
+ 
+f(-1) = -a + b - c + d = 0,5 
+ 
+f(-5) = -125a + 25b - 5c + d = -103,5 
+ 
+f(3) = 27a + 9b + 3c + d = 40,5 
+ 
+Koeffizientenmatrix 
+ 
+   1     1     1     1       4,5    (1)  erste Zeile der Lösungsmatrix 
+  -1     1    -1     1       0,5    (2)  
+-125    25    -5     1    -103,5    (3) 
+  27     9     3     1      40,5    (4) 
+ 
+Mit (1) a aus (2), (3) und (4) eliminieren 
+ 
+(1) + (2) 
+ 
+ 1      1     1     1      4,5 
+<u>-1      1    -1     1      0,5</u> 
+ 0      2     0     2      5 
+ 
+(1) * 125 + (3) 
+ 
+ 125      125     125     125     562,5 
+<u>-125       25      -5       1    -103,5</u>     
+   0      150     120     126     459 
+ 
+(1) * (-27) + (4) 
+
+-27     -27     -27     -27     -121,5 
+<u> 27       9       3       1       40,5</u>      
+  0     -18     -24     -26      -81                        
+ 
+Matrix 1 
+ 
+1      1       1       1       4,5     
+0      2       0       2       5       (5) zweite Zeile der Lösungsmatrix 
+0    150     120     126     459       (6)  
+0   -18      -24     -26     -81       (7)                  
+ 
+Mit (5) b aus (6) und (7) eliminieren 
+ 
+(5) * (-75) + (6) 
+ 
+0   -150       0     -150     -375 
+<u>0    150     120      126      459</u>          
+0      0     120      -24       84    
+ 
+(5) * 9 + (7) 
+ 
+0     18     0     18     45 
+<u>0    -18   -24    -26    -81</u> 
+0      0   -24     -8    -36 
+ 
+Matrix 2 
+ 
+1      1        1      1        4,5     
+0      2        0      2         5        
+0      0      120    -24        84     (8)   dritte Zeile der Lösungsmatrix 
+0      0      -24     -8       -36     (9) 
+ 
+Aus (8) und (9) c eliminieren 
+ 
+(8) + (9) * 5 
+ 
+0     0     120     -24     84 
+<u>0     0    -120     -40   -180</u>    
+0     0       0     -64    -96    vierte Zeile der Lösungsmatrix 
+   
+Lösungsmatrix 
+ 
+1      1        1      1         4,5 
+0      2        0      2         5 
+0      0      120    -24        84 
+0      0        0    -64       -96     
+ 
+4. Zeile 
+
+-64d = -96 |:(-64) 
+ 
+   <span style="color:red;">d = 1,5</span> 
+ 
+d = 1,5 in die 3. Zeile eingesetzt 
+ 
+120c - 24 * 1,5 = 84 |+ 36
+ 
+           120c = 120 | :120 
+ 
+              <span style="color:red;">c = 1</span> 
+ 
+c = 1 und d = 1,5 in die 2. Zeile eingesetzt 
+ 
+2b + 2 * 1,5 = 5 |-3 
+ 
+          2b = 2 | :2 
+ 
+           <span style="color:red;">b = 1</span> 
+ 
+b = 1, c = 1 und d = 1,5 in die 1. Zeile eingesetzt 
+ 
+a + 1 + 1 + 1,5 = 4,5 |-3,5 
+ 
+              <span style="color:red;">a = 1</span>
+ 
+
+
+</p></pre>

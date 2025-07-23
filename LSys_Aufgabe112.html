@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Gleichungssysteme</title>
+  
+</head>
+<body style="background-color:lightgrey;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 112
+
+Aus Einzelteilen E fertigt ein Betrieb Montageeinheiten M und  
+daraus Fertigprodukte F. 
+ 
+Produktionsmatrizen: 
+ 
+        M<sub>1</sub>      M<sub>2</sub>       M<sub>3</sub>                  F<sub>1</sub>       F<sub>2</sub>        F<sub>3</sub> 
+E<sub>1</sub>       5      6         1           M<sub>1</sub>      1        1         1   
+E<sub>2</sub>       4      2         3           M<sub>2</sub>      1        1         3  
+E<sub>3</sub>       3      3         8           M<sub>3</sub>      1        2         4 
+ 
+Wie viel Fertigprodukte kann der Betrieb herstellen, wenn er  
+1 600 Einzelteile E<sub>1</sub>, 1 300 E<sub>2</sub> und 2 350 E<sub>3</sub> auf Lager hat? 
+ 
+Berechnung der Montageeinheiten in einem 2-stufigen 
+Produktionsprozess: 
+ 
+5 * M<sub>1</sub> + 6 * M<sub>2</sub> + 1 * M<sub>3</sub> = 1600 
+ 
+4 * M<sub>1</sub> + 2 * M<sub>2</sub> + 3 * M<sub>3</sub> = 1300 
+ 
+3 * M<sub>1</sub> + 3 * M<sub>2</sub> + 8 * M<sub>3</sub> = 2350 
+ 
+Koeffizientenmatrix 
+ 
+5         6       1     1600     (1)   erste Zeile der Lösungsmatrix 
+4         2       3     1300     (2) 
+3         3       8     2350     (3) 
+ 
+Mit (1) M<sub>1</sub> aus (2) und (3) eliminieren 
+ 
+(1) * (-4) + (2) * 5 
+
+-20       -24     -4        -6400 
+<u> 20        10     15         6500</u> 
+   0      -14     11          100         
+ 
+(1) * (-3) + (5) 
+
+-15       -18       -3     -4800 
+<u> 15        15       40     11750</u>    
+  0        -3       37      6950              
+ 
+Matrix 1 
+ 
+5         6      1     1600 
+0       -14     11      100       (4)  zweite Zeile der Lösungsmatrix     
+0        -3     37     6950       (5)        
+    
+Aus (4) und (5) M<sub>2</sub> eliminieren 
+ 
+(4) * 3 + (5) * (-14) 
+ 
+0     -42      33      300 
+0      42    -518   -97300 
+0       0    -485   -97000    dritte Zeile der Lösungsmatrix 
+ 
+Lösungsmatrix 
+ 
+5         6      1      1600 
+0       -14     11       100 
+0         0   -485    -97000 
+ 
+3. Zeile 
+
+-485M<sub>3</sub> = -97 000 |:(-485) 
+ 
+    M<sub>3</sub> = 200 
+ 
+M<sub>3</sub> = 200 in die 2. Zeile eingesetzt 
+
+-14M<sub>2</sub> + 11 * 200 = 100 
+ 
+    -14M<sub>2</sub> + 2200 = 100 |-2200 
+ 
+           -14M<sub>2</sub> = -2100 |:(-14) 
+ 
+              M<sub>2</sub> = 150 
+ 
+M<sub>2</sub> = 150 und M<sub>3</sub> = 200 in die 1. Zeile eingesetzt 
+ 
+5M<sub>1</sub> + 6 * 150 + 1 * 200 = 1600 
+ 
+        5M<sub>1</sub> + 900 + 200 = 1600 |-1100 
+ 
+                    5M<sub>1</sub> = 500 |:5 
+ 
+                     M<sub>1</sub> = 100 
+ 
+Berechnung der Fertigprodukte 
+ 
+1 * F<sub></sub> + 1 * F<sub>2</sub> + 1 * F<sub>3</sub> = 100       
+  
+1 * F<sub>1</sub> + 1 * F<sub>2</sub> + 3 * F<sub>3</sub> = 150         
+ 
+1 * F<sub>1</sub> + 2 * F<sub>2</sub> + 4 * F<sub>3</sub> = 200       
+ 
+ 
+Koeffizientenmatrix 
+ 
+1     1     1     100     (1)   erste Zeile der Lösungsmatrix 
+1     1     3     150     (2)   
+1     2     4     200     (3) 
+ 
+Mit (1) F<sub>1</sub> aus (2) und (3) eliminieren 
+ 
+(1) + (2) * (-1) 
+ 
+ 1     1      1      100 
+<u>-1    -1     -3     -150</u> 
+ 0     0     -2      -50   zweite Zeile der Lösungsmatrix  
+ 
+(1) + (3) * (-1) 
+ 
+ 1      1      1      100 
+<u>-1     -2     -4     -200</u> 
+ 0     -1     -3     -100   dritte Zeile der Lösungsmatrix         
+ 
+Lösungsmatrix 
+ 
+1      1       1       100 
+0      0      -2       -50 
+0     -1      -3      -100 
+ 
+2. Zeile 
+
+-2F<sub>3</sub> = -50 |:(-2) 
+ 
+  <span style="color:red;">F<sub>3</sub> = 25</span> 
+ 
+F<sub>3</sub> = 25 in die 3. Zeile eingesetzt 
+
+-F<sub>2</sub> + 25 * (-3) = -100 |-75 
+ 
+            -F<sub>2</sub> = -25 |:(-1) 
+ 
+             <span style="color:red;">F<sub>2</sub> = 25</span> 
+
+F<sub>2</sub> = 25 und F<sub>3</sub> = 25 in die 1. Zeile eingesetzt 
+
+F<sub>1</sub> + 25 + 25 = 100 |-50 
+
+          <span style="color:red;">F<sub>1</sub> = 50</span>
+
+
+</p></pre>

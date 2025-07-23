@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Gleichungssysteme</title>
+  
+</head>
+<body style="background-color:lightgrey;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 114
+
+Ein Maschinenbauteil soll aus 90% Kupfer, 5% Zink und 5% Zinn bestehen. 
+Zur Herstellung stehen 3 Legierungen zur Verfügung. 
+Legierung L1 besteht aus 80% Kupfer und 20% Zink. 
+Legierung L2 besteht aus 95% Kupfer und 5% Zinn. 
+Legierung L3 besteht aus 80% Kupfer, 10% Zink und 10% Zinn. 
+Zu welchen Anteilen benötigt man zur Herstellung die einzelnen Legierungen? 
+ 
+80 * L<sub>1</sub> + 95 * L<sub>2</sub> + 80 * L<sub>3</sub> = 90 
+ 
+20 * L<sub>1</sub> +   0 * L<sub>2</sub> + 10 * L<sub>3</sub> = 5 
+ 
+0 * L<sub>1</sub> +     5 * L<sub>2</sub> + 10 * L<sub>3</sub> = 5 
+ 
+Koeffizientenmatrix 
+ 
+80       95     80    90     (1)   erste Zeile der Lösungsmatrix 
+20        0     10     5     (2) 
+ 0        5     10     5     (3) 
+ 
+Mit (1) L<sub>1</sub> aus (2) eliminieren 
+ 
+(1) * (-4) + (2) * 3 
+ 
+ 80        95       80         90 
+<u>-80         0      -40        -20</u> 
+  0        95       40         70         
+ 
+Matrix 1 
+ 
+80       95     80    90 
+ 0       95     40    70       (4)  zweite Zeile der Lösungsmatrix     
+ 0        5     10     5       (5)        
+    
+Aus (4) und (5) L<sub>2</sub> eliminieren 
+ 
+(4) + (5) * (-19) 
+ 
+0      95      40        70 
+<u>0     -95    -190       -95</u> 
+0       0    -150       -25    dritte Zeile der Lösungsmatrix 
+ 
+Lösungsmatrix 
+ 
+80       95      80      90 
+0        95      40      70 
+0         0    -150     -25 
+ 
+3. Zeile 
+
+ -150L<sub>3</sub> = -25 |:(-150) 
+ 
+            25     <span style="color:red;">1</span> 
+     <span style="color:red;">L<sub>3</sub></span> = ----- <span style="color:red;">= ---</span> 
+           150     <span style="color:red;">6</span> 
+
+      1   
+L<sub>3</sub> = --- in die 2. Zeile eingesetzt 
+      6
+ 
+             1           40      
+95L<sub>2</sub> + 40 * --- = 70 |- ---- 
+             6            6 
+ 
+                   420     40     380     
+           95L<sub>2</sub> = ----- - ---- = -----|:95 
+                    6      6       6   
+ 
+                     380      4     <span style="color:red;">2</span>  
+             <span style="color:red;">L<sub>2</sub></span> = -------- = --- <span style="color:red;">= ---</span> 
+                   6 * 95     6     <span style="color:red;">3</span> 
+
+      2            1
+L<sub>2</sub> = --- und L<sub>3</sub> = --- in die 1. Zeile eingesetzt 
+      3            6
+
+             2          1   
+80L<sub>1</sub> + 95 * --- + 80 * --- = 90 
+             3          6    
+ 
+               380     80     540      460  
+       80L<sub>1</sub> + ----- + ---- = ----- |- ----- 
+                6       6      6        6 
+   
+                              80         
+                      80L<sub>1</sub> = ----- |:80 
+                               6        
+ 
+                               <span style="color:red;">1</span>   
+                         <span style="color:red;">L<sub>1</sub> = ---</span> 
+                               <span style="color:red;">6</span>  
+ 
+
+
+</p></pre>

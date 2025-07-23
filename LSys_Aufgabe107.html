@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Gleichungssysteme</title>
+  
+</head>
+<body style="background-color:lightgrey;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 107
+
+Wie lang sind die Seiten eines Dreiecks, 
+wenn die Summen von je zwei Seiten 40 cm, 
+63 cm und 71 cm ergeben? 
+ 
+Die Dreieckseiten sind, wie üblich, a, b und c. 
+ 
+a + b = 40 
+ 
+a + c = 63 
+ 
+b + c = 71 
+ 
+Koeffizientenmatrix: 
+ 
+1     1     0     40     (1)     erste Zeile der Lösungsmatrix 
+1     0     1     63     (2) 
+0     1     1     71     (3) 
+ 
+Mit (1) a aus (2) eliminieren 
+ 
+(1) * (-1) + (2) 
+
+-1     -1      0     -40 
+ 1      0      1      63 
+ 0     -1      1      23         
+ 
+Matrix 1 
+ 
+1     1     0     40      
+0    -1     1     23     (4)   zweite Zeile der Lösungsmatrix 
+0     1     1     71     (5) 
+ 
+Aus (4) und (5) b eliminieren 
+ 
+(4) + (5) 
+ 
+0     -1     1     23 
+0      1     1     71 
+0      0     2     94     dritte Zeile der Lösungsmatrix 
+ 
+Lösungsmatrix 
+ 
+1     1     0     40 
+0    -1     1     23 
+0     0     2     94 
+ 
+3. Zeile 
+
+2c = 94 |:2 
+
+<span style="color:red;">c = 47 cm</span> 
+
+c = 47 in die 2. Zeile eingesetzt 
+
+-b + 47 = 23 |-47 
+
+-b = -24 |:(-1) 
+
+<span style="color:red;">b = 24 cm</span> 
+
+b = 24 in die 1. Zeile eingesetzt 
+
+a + 24 = 40 |-24 
+
+<span style="color:red;">a = 16 cm</span>
+ 
+
+
+</p></pre>

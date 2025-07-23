@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Gleichungssysteme</title>
+  
+</head>
+<body style="background-color:lightgrey;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 110
+
+a) In einem Gericht aus Fleisch, Nudeln und Gemüse sind 140 g Eiweiß,  
+   100 g Fett und 400 g Kohlenhydrate. Je 100 g Fleisch usw. enthalten  
+                             
+                    Fleisch       Nudeln       Gemüse 
+    Eiweiß            10g           10g          40g             
+    Fett              40g                        10g     
+    Kohlenhydrate     30g           70g          30g   
+ 
+    Wie schwer ist eine Portion?  
+ 
+b) Ein Gericht soll nur aus Fleisch und Gemüse bestehen und  
+   100 g Fett und 150 g Eiweiß enthalten. 
+   Wie hoch ist der Kohlenhydratanteil in g?  
+ 
+a)  
+ 
+F Fleischmenge * 100 g 
+N Nudelmenge * 100 g 
+G Gemüsemenge * 100 g 
+ 
+10 * F + 10 * N + 40 * G = 140 
+ 
+40 * F          + 10 * G = 100 
+ 
+30 * F + 70 * N + 30 * G = 400     
+ 
+Koeffizientenmatrix 
+ 
+10     10     40     140     (1)   erste Zeile der Lösungsmatrix 
+40            10     100     (2) 
+30     70     30     400     (3) 
+ 
+Mit (1) F aus (2) und (3) eliminieren 
+ 
+(1) * (-4) + (2) 
+
+-40    -40     -160     -560 
+<u> 40              10      100</u> 
+  0    -40     -150     -460         
+ 
+(1) * (-3) + (2) 
+
+-30     -30     -120     -420 
+<u> 30      70       30      400</u>    
+  0      40      -90      -20             
+ 
+Matrix 1 
+ 
+10     10     40     140 
+ 0    -40   -150    -460    (4)  zweite Zeile der Lösungsmatrix     
+ 0     40    -90     -20    (5)        
+    
+ 
+Aus (4) und (5) N eliminieren 
+ 
+(4) + (5) 
+ 
+0     -40     -150     -460 
+<u>0      40      -90      -20</u> 
+0       0     -240     -480    dritte Zeile der Lösungsmatrix 
+ 
+Lösungsmatrix 
+ 
+10      10       40      140 
+ 0      40      -90      -20 
+ 0       0     -240     -480  
+ 
+3. Zeile 
+
+ -240G = -480 |:(-240) 
+ 
+     G = 2 * 100 g = 200 g 
+ 
+G = 200 in die 2. Zeile eingesetzt 
+ 
+40N -90 * 2 = -20 |+180 
+ 
+        40N = 160 |:40 
+ 
+          N = 4 * 100 g = 400 g 
+ 
+G = 200 und N = 400 in die 1. Zeile eingesetzt 
+ 
+10F + 10 * 4 + 40 * 2 = 140 
+ 
+        10F + 40 + 80 = 140 |-120 
+ 
+                  10F = 20 |:10 
+ 
+                    F = 2 * 100 g = 200g 
+ 
+<span style="color:red;">Das Gericht wiegt</span> 200 g + 400 g + 200 g = <span style="color:red;">800 g</span> 
+ 
+b) 
+ 
+10 * F + 40 * G = 150     (1) 
+ 
+40 * F + 10 * G = 100     (2) 
+ 
+(1) * (-4) + (2) 
+
+-40F      -160G     -600 
+<u> 40F        10G      100</u> 
+          -150G   = -500 |:(-150) 
+ 
+                     500     10         
+                G = ----- = ----   
+                     150      3    
+ 
+                           10           
+Kohlenhydratanteil in G = ---- * 30 g = 100 g  
+                            3         
+ 
+G = 100 in (1) eingesetzt 
+ 
+            10            400  
+10F + 40 * ---- = 150 |- ----- 
+             3             3 
+
+       50    
+10F = -----   |:10 
+        3    
+
+     5    
+F = --- 
+     3  
+                           5         
+Kohlenhydratanteil in F = --- * 30 = 50 g  
+                           3        
+ 
+<span style="color:red;">Insgesamt sind 150 g Kohlenhydrate in dem Gericht</span>
+ 
+
+
+</p></pre>
