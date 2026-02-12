@@ -12,48 +12,64 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 52
+<pre><b><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 52
 
 2x +  y + 5z = -21    
  x + 5y + 2z =  19 
 5x + 2y +  z =   2 
  
      
-D = <math ><mo>|</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 2 * <math><mo>|</mo>><mtable><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> - 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 5 *  <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> =  
- 
-  = 2 * (5 * 1 - 2 * 2) - 1 * (1 * 1 - 5 * 2) + 5 * (1 * 2 - 5 * 5)     
- 
-  = 2 * (5  - 4) - 1 * (1 - 10) + 5 * (2 - 25) 
- 
-  = 2 + 9 - 115 = - 104 
-  
-D<sub>x</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>-21</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>19</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 21 * <math><mo>|</mo>><mtable><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>19</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 5 *  <math><mo>|</mo>><mtable><mtr><mtd><mn>19</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> = 
- 
-  = -21 * (5 * 1 - 2 * 2) - 1 * (19 * 1 - 2 * 2) + 5 * (19 * 2 - 2 * 5)     
- 
-  = -21 * (5 - 4)  - 1 * (19 - 4) + 5 * (38 - 10)  
- 
-  = - 21 - 15 + 140 = 104 
-   
-D<sub>y</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>-21</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>19</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 2 * <math><mo>|</mo>><mtable><mtr><mtd><mn>19</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> -(-21) * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 5 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>19</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> = 
- 
-  = 2 * (19 * 1 - 2 * 2) + 21 * (1 * 1 - 5 * 2) + 5 * (1 * 2 - 5 * 19)  
-     
-  = 2 * 15  + 21 * (-9) + 5 * (-93)  
- 
-  = 30  - 189 - 465 = 624   
- 
-D<sub>z</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>-21</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>19</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> = 2 * <math><mo>|</mo>><mtable><mtr><mtd><mn>5</mn></mtd><mtd><mn>19</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>19</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> -(-21) * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> = 
- 
-  = 2 * (5 * 2 - 2 * 19) - 1 * (1 * 2 - 5 * 19) + 21 * (1 * 2 - 5 * 5)  
+D = <math ><mo>|</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 2 * <math><mo>|</mo>><mtable><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> - 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 
 
-  = 2 * (-28) - 1 * (-93) + 21 * (-23) 
++ 5 *  <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> =  
  
-  = -56 + 93 - 483 = 520  
+= 2 * (5 * 1 - 2 * 2) - 1 * (1 * 1 - 5 * 2) + 
+  
++ 5 * (1 * 2 - 5 * 5)     
+ 
+= 2 * (5  - 4) - 1 * (1 - 10) + 5 * (2 - 25) 
+ 
+= 2 + 9 - 115 = - 104 
+  
+D<sub>x</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>-21</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>19</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 21 * <math><mo>|</mo>><mtable><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>19</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 
+
++ 5 *  <math><mo>|</mo>><mtable><mtr><mtd><mn>19</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> = 
+ 
+= -21 * (5 * 1 - 2 * 2) - 1 * (19 * 1 - 2 * 2) + 
+
++ 5 * (19 * 2 - 2 * 5)     
+ 
+= -21 * (5 - 4)  - 1 * (19 - 4) + 5 * (38 - 10)  
+ 
+= -21 - 15 + 140 = 104 
+   
+D<sub>y</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>-21</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>19</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 2 * <math><mo>|</mo>><mtable><mtr><mtd><mn>19</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> -(-21) * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 
+
++ 5 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>19</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> = 
+ 
+= 2 * (19 * 1 - 2 * 2) + 21 * (1 * 1 - 5 * 2) + 
+
++ 5 * (1 * 2 - 5 * 19)  
+     
+= 2 * 15  + 21 * (-9) + 5 * (-93)  
+ 
+= 30  - 189 - 465 = 624   
+ 
+D<sub>z</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>-21</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>19</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> = 2 * <math><mo>|</mo>><mtable><mtr><mtd><mn>5</mn></mtd><mtd><mn>19</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>19</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> - 
+
+- (-21) * <math><mo>|</mo>><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable><mo>|</mo></math> = 
+ 
+= 2 * (5 * 2 - 2 * 19) - 1 * (1 * 2 - 5 * 19) + 
+
++ 21 * (1 * 2 - 5 * 5)  
+
+= 2 * (-28) - 1 * (-93) + 21 * (-23) 
+ 
+= -56 + 93 - 483 = 520  
      
       D<sub>x</sub>      104     
 <span style="color:red;">x</span> = ----- = ------ <span style="color:red;">= -1</span> 
@@ -67,4 +83,4 @@ D<sub>z</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</m
 <span style="color:red;">z</span> = ------ = ------ <span style="color:red;">= - 5</span> 
       D      -104   
  
-</p></pre>
+</p></b></pre>

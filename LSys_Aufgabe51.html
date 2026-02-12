@@ -12,39 +12,55 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 51
+<pre><b><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 51
 
  x +  y + z = 8    
 3x + 2y + z = 49 
 5x - 3y + z = 0  
      
-D = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> - 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 1 *  <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> =    
- 
-  = 1 * (2 * 1 - 1 * (-3)) - 1 * (3 * 1 - 5 * 1) + 1 * (3 * (-3) - 5 * 2)     
- 
-  = 2 + 3  - 3 + 5 - 9 - 10 = -12 
+D = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> - 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 
 
-D<sub>x</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>49</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 8 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>49</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 1 *  <math><mo>|</mo>><mtable><mtr><mtd><mn>49</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> =     
++ 1 *  <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> =
  
-  = 8 * (2 * 1 - 1 * (-3)) - 1 * (49 * 1 - 0 * 1) + 1 * (49 * (-3) - 0 * 2)     
+= 1 * (2 * 1 - 1 * (-3)) - 1 * (3 * 1 - 5 * 1) + 
+  
++ 1 * (3 * (-3) - 5 * 2)     
  
-  = 8 * (2 + 3)  - 1 * 49 + 1 * (-147) = - 156 
+= 2 + 3 - 3 + 5 - 9 - 10 = -12 
+
+D<sub>x</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>49</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 8 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>49</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 
+
++ 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>49</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> = 
+
+= 8 * (2 * 1 - 1 * (-3)) - 1 * (49 * 1 - 0 * 1) + 
+  
++ 1 * (49 * (-3) - 0 * 2)     
  
-D<sub>y</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> -8 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> + 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> =     
+= 8 * (2 + 3) - 1 * 49 + 1 * (-147) = -156 
  
-  = 1 * (49 * 1 - 0 * 1) - 8 * (3 * 1 - 5 * 1) + 1 * (3 * 0 - 5 * 49)  
+D<sub>y</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> -8 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> + 
+
++ 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> =     
+ 
+= 1 * (49 * 1 - 0 * 1) - 8 * (3 * 1 - 5 * 1) + 
+
++ 1 * (3 * 0 - 5 * 49)  
      
-  = 1 * 49  - 8 * (-2) + 1 * (-245) = - 180 
+= 1 * 49  - 8 * (-2) + 1 * (-245) = -180 
  
-D<sub>z</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>8</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> = 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> + 8 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> = 
+D<sub>z</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>8</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> = 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> + 
+
++ 8 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> = 
  
-  = 1 * (2 * 0 - (-3) * 49) - 1 * (3 * 0 - 5 * 49) + 8 * (3 * (-3) - 5 * 2)  
+= 1 * (2 * 0 - (-3) * 49) - 1 * (3 * 0 - 5 * 49) + 
+
++ 8 * (3 * (-3) - 5 * 2)  
      
-  = 1 * 147 - 1 * (-245) + 8 * (-9 - 10) = 240 
+= 1 * 147 - 1 * (-245) + 8 * (-9 - 10) = 240 
  
      D<sub>x</sub>      -156     
 <span style="color:red;">x</span> = ----- = ------ <span style="color:red;">= 13</span> 
@@ -59,4 +75,4 @@ D<sub>z</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</m
       D       -12   
  
  
-</p></pre>
+</p></b></pre>

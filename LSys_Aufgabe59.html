@@ -12,11 +12,11 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 59
+<pre><b><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 59
 
 -2v - 2w +  x + 3y +  z = 3   
   v - 2w - 2x +  y + 3z = 4 
@@ -27,42 +27,44 @@
 Koeffizientenmatrix: 
 
   v      w     x     y       z
- -2     -2     1     3       1      3     (1) erste Zeile der Lösungsmatrix 
-  1     -2    -2     1       3      4     (2)   
-  3      1    -2    -2       1      2     (3)     
-  1      3     1    -2      -2      1     (4)    
- -2      1     3     1      -2      5     (5)    
+ <span style="color:blue;">-2     -2     1     3       1      3</span>     (1) 
+ erste Zeile der Lösungsmatrix 
+  1     -2    -2     1       3      4     (2)
+  3      1    -2    -2       1      2     (3)
+  1      3     1    -2      -2      1     (4)
+ -2      1     3     1      -2      5     (5)
  
 Mit (1) v aus (2), (3), (4) und (5) v eliminieren 
  
 (1) + (2) * 2 
 
 -2     -2     1     3       1      3      
-<u> 2     -4    -4     2       6      8</u>     
+<u> 2     -4    -4     2       6      8</u>
  0     -6    -3     5       7     11     
  
 (1) * (3) + (3) * 2   
  
 -6    -6     3     9       3      9 
-<u> 6     2    -4    -4       2      4</u>     
+<u> 6     2    -4    -4       2      4</u>
  0    -4    -1     5       5     13      
  
 (1) + (4) * 2 
 
 -2     -2     1     3       1      3      
-<u> 2      6     2    -4      -4      2</u>     
+<u> 2      6     2    -4      -4      2</u>
  0      4     3    -1      -3      5 
  
 (1) + (5) * (-1) 
 
 -2     -2     1     3      1       3      
-<u> 2     -1    -3    -1      2      -5</u>    
+<u> 2     -1    -3    -1      2      -5</u>
  0     -3    -2     2      3      -2     
  
 Matrix 1 
 
 -2     -2     1     3       1      3      
- 0     -6    -3     5       7     11    (6)   zweite Zeile der Lösungsmatrix 
+ <span style="color:blue;">0     -6    -3     5       7     11</span>    (6)
+ zweite Zeile der Lösungsmatrix 
  0     -4    -1     5       5     13    (7)  
  0      4     3    -1      -3      5    (8) 
  0     -3    -2     2       3     -2    (9) 
@@ -72,59 +74,62 @@ Mit (6) w aus (7), (8) und (9) w eliminieren
 (6) *2  + (7) * (-3) 
  
 0     -12       -6      10      14     22 
-<u>0      12        3     -15     -15    -39</u>        
-0       0       -3      -5      -1    -17       
+<u>0      12        3     -15     -15    -39</u>
+0       0       -3      -5      -1    -17
   
 (6) * (2) + (8) * 3  
  
 0     -12       -6       10      14     22 
-<u>0      12        9       -3      -9     15</u>         
-0       0        3        7       5     37      
+<u>0      12        9       -3      -9     15</u>
+0       0        3        7       5     37
  
 (6) + (9) * (-2) 
  
 0     -6    -3     5     7     11     
-<u>0      6     4    -4    -6      4</u>      
+<u>0      6     4    -4    -6      4</u>
 0      0     1     1     1     15     
  
 Matrix 2 
 
 -2     -2       1      3       1      3      
  0     -6      -3      5       7     11 
- 0      0      -3     -5      -1    -17    (10) dritte Zeile der Lösungsmatrix   
- 0      0       3      7       5     37    (11)   
- 0      0       1      1       1     15    (12)  
+ <span style="color:blue;">0      0      -3     -5      -1    -17</span>    (10) 
+ dritte Zeile der Lösungsmatrix   
+ 0      0       3      7       5     37    (11)
+ 0      0       1      1       1     15    (12)
  
 Mit (10) x aus (11) und (12) eliminieren 
  
 (10) + (11) 
  
-0       0     -3       -5       -1    -17       
-<u>0       0      3        7        5     37</u>   
+0       0     -3       -5       -1    -17
+<u>0       0      3        7        5     37</u>
 0       0      0        2        4     20 
  
 (10) + (12) * 3 
  
 0       0     -3       -5      -1    -17       
-<u>0       0      3        3       3     45</u>     
-0       0      0       -2       2      28                      
+<u>0       0      3        3       3     45</u>
+0       0      0       -2       2      28
   
 Matrix 3 
 
--2     -2       1      3       1      3      
+-2     -2       1      3       1      3
  0     -6      -3      5       7     11 
  0      0      -3     -5      -1    -17 
- 0      0       0      2       4     20     (13)   vierte Zeile der Lösungsmatrix 
- 0      0       0     -2       2     28     (14)                 
- 
+ <span style="color:blue;">0      0       0      2       4     20</span>     (13)   
+ vierte Zeile der Lösungsmatrix 
+ 0      0       0     -2       2     28     (14) 
+
 Aus (13) und (14) y eliminieren 
  
 (13) * (14) 
  
 0       0         0        2       4     20 
-<u>0       0         0       -2       2     28</u>           
-0       0         0        0       6     48    fünfte Zeile der Lösungsmatrix                      
- 
+<u>0       0         0       -2       2     28</u>
+<span style="color:blue;">0       0         0        0       6     48</span>    
+fünfte Zeile der Lösungsmatrix
+
 Lösungsmatrix 
 
 -2     -2     1      3       1      3 
@@ -175,15 +180,15 @@ w, x, y und z in die 1. Zeile eingesetzt
 
 -2v - 2 * (-4) + 1 * 13 + 3 * (-6) + 1 * 8 = 3 
  
-                     -2v + 8 + 13 - 18 + 8 = 3 
+                -2v + 8 + 13 - 18 + 8 = 3 
  
-                                   -2y +11 = 3 |-11 
+                              -2y +11 = 3 |-11 
  
-                                      -2y = -8 |:(-2) 
+                                  -2y = -8 |:(-2) 
  
-                                        <span style="color:red;">y = 4</span>
+                                    <span style="color:red;">y = 4</span>
  
                            
 
  
-</p></pre>
+</p></b></pre> 
