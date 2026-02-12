@@ -12,18 +12,22 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 114
+<pre><b><p class ="Aufgabe">Lineare Gleichungssysteme Aufgabe 114
 
-Ein Maschinenbauteil soll aus 90% Kupfer, 5% Zink und 5% Zinn bestehen. 
-Zur Herstellung stehen 3 Legierungen zur Verfügung. 
+Ein Maschinenbauteil soll aus 90% Kupfer, 5% Zink 
+und 5% Zinn bestehen. 
+Zur Herstellung stehen 3 Legierungen zur 
+Verfügung. 
 Legierung L1 besteht aus 80% Kupfer und 20% Zink. 
 Legierung L2 besteht aus 95% Kupfer und 5% Zinn. 
-Legierung L3 besteht aus 80% Kupfer, 10% Zink und 10% Zinn. 
-Zu welchen Anteilen benötigt man zur Herstellung die einzelnen Legierungen? 
+Legierung L3 besteht aus 80% Kupfer, 10% Zink und 
+10% Zinn. 
+Zu welchen Anteilen benötigt man zur Herstellung 
+die einzelnen Legierungen? 
  
 80 * L<sub>1</sub> + 95 * L<sub>2</sub> + 80 * L<sub>3</sub> = 90 
  
@@ -33,7 +37,8 @@ Zu welchen Anteilen benötigt man zur Herstellung die einzelnen Legierungen?
  
 Koeffizientenmatrix 
  
-80       95     80    90     (1)   erste Zeile der Lösungsmatrix 
+<span style="color:blue;">80       95     80    90</span>     (1)   
+erste Zeile der Lösungsmatrix 
 20        0     10     5     (2) 
  0        5     10     5     (3) 
  
@@ -48,7 +53,8 @@ Mit (1) L<sub>1</sub> aus (2) eliminieren
 Matrix 1 
  
 80       95     80    90 
- 0       95     40    70       (4)  zweite Zeile der Lösungsmatrix     
+ <span style="color:blue;">0       95     40    70</span>       (4)  
+ zweite Zeile der Lösungsmatrix     
  0        5     10     5       (5)        
     
 Aus (4) und (5) L<sub>2</sub> eliminieren 
@@ -57,7 +63,8 @@ Aus (4) und (5) L<sub>2</sub> eliminieren
  
 0      95      40        70 
 <u>0     -95    -190       -95</u> 
-0       0    -150       -25    dritte Zeile der Lösungsmatrix 
+<span style="color:blue;">0       0    -150       -25</span>    
+dritte Zeile der Lösungsmatrix 
  
 Lösungsmatrix 
  
@@ -90,12 +97,14 @@ L<sub>3</sub> = --- in die 2. Zeile eingesetzt
                    6 * 95     6     <span style="color:red;">3</span> 
 
       2            1
-L<sub>2</sub> = --- und L<sub>3</sub> = --- in die 1. Zeile eingesetzt 
+L<sub>2</sub> = --- und L<sub>3</sub> = ---  
       3            6
 
              2          1   
 80L<sub>1</sub> + 95 * --- + 80 * --- = 90 
-             3          6    
+             3          6 
+             
+in die 1. Zeile eingesetzt             
  
                380     80     540      460  
        80L<sub>1</sub> + ----- + ---- = ----- |- ----- 
@@ -111,4 +120,4 @@ L<sub>2</sub> = --- und L<sub>3</sub> = --- in die 1. Zeile eingesetzt
  
 
 
-</p></pre>
+</p></b></pre>
