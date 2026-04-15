@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lineare Gleichungssysteme</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
   
 </head>
 <body style="background-color:white; margin-top: 1em; ">
@@ -22,7 +26,9 @@
 3x + 2y + z = 49 
 5x - 3y + z = 0  
      
-D = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> - 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 
+D = <math ><mfenced open="|" close="|"><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mo>-</mo><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math> = 1 * <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mo>-</mo><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math><nobr> 
+
+1 * <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mo>-</mo><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>
 
 + 1 *  <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> =
  
@@ -32,7 +38,7 @@ D = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd
  
 = 2 + 3 - 3 + 5 - 9 - 10 = -12 
 
-D<sub>x</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>49</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 8 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> -1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>49</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> + 
+D<sub>x</sub> = <math ><mfenced open="|" close="|"><mtable><mtr><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>49</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mo>-</mo><mn>3</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced><mo>&#xA0;</mo></math> + 
 
 + 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>49</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> = 
 
@@ -42,7 +48,7 @@ D<sub>x</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>8</mn></mtd><mtd><mn>1</m
  
 = 8 * (2 + 3) - 1 * 49 + 1 * (-147) = -156 
  
-D<sub>y</sub> = <math ><mo>|</mo><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>|</mo></math> = 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>-3</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> -8 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>|</mo></math> + 
+D<sub>y</sub> = <math ><mfenced open="|" close="|"><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>49</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced><mo>&#xA0;</mo></math> + 
 
 + 1 * <math><mo>|</mo>><mtable><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd><mtd><mn>-3</mn></mtd></mtr></mtable><mo>|</mo></math> =     
  
